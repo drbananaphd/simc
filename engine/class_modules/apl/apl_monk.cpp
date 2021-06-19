@@ -544,8 +544,8 @@ void windwalker( player_t* p )
       p, "Storm, Earth, and Fire",
       "if=cooldown.storm_earth_and_fire.charges=2|fight_remains<20|(raid_event.adds.remains>15|(!covenant.kyrian&!covenant.necrolord)&"
       "((raid_event.adds.in>cooldown.storm_earth_and_fire.full_recharge_time|!raid_event.adds.exists)&"
-      "(cooldown.invoke_xuen_the_white_tiger.remains>cooldown.storm_earth_and_fire.full_recharge_time|"
-      "variable.hold_xuen))&"
+      "(cooldown.invoke_xuen_the_white_tiger.remains>cooldown.storm_earth_and_fire.full_recharge_time|variable.hold_"
+      "xuen))&"
       "cooldown.fists_of_fury.remains<=9&chi>=2&cooldown.whirling_dragon_punch.remains<=12)" );
   cd_sef->add_action( p, "Storm, Earth, and Fire",
                       "if=covenant.kyrian&(buff.weapons_of_order.up|(fight_remains<cooldown.weapons_of_order.remains|"
